@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在控制台输出1~100之间所有3的倍数</title>
+</head>
+<body>
+    <!-- <script>
+        for (var n = 1;n/3 == 0;n++) {
+            console.log(n)
+        }
+    </script> -->
+    <script>
+        // 分析： 1. 拿到 1~100 之间所有数字 2.对每一个数字判断，是3的倍数就输出，不是就什么也不做
+        for (var n = 1;n <= 100;n++) {
+            if ( n % 3 === 0) {
+                console.log(n)
+            }
+        }
+    </script>
+</body>
+</html>

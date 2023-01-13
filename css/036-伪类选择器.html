@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 默认情况超链接样式 */
+        a:link{
+            color :red;
+        }
+        /* 超链接打开之后再返回看到的超链接样式 */
+        a:visited{
+            color :black;
+        }
+        /* 鼠标放在超链接上面看到的样式 */
+        a:hover{
+            color :green;
+        }
+        /* 鼠标点住不打开时 */
+        a:active{
+            color :yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 超链接默认情况下（link）是蓝色，点击不放开鼠标（active）会变成红色，点击完再返回(visited)会变成紫色 -->
+    <a href="https://www.baidu.com">百度</a>
+</body>
+</html>

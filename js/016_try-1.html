@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻找最小公倍数 公倍数：能同时整除两个数字</title>
+</head>
+<body>
+    <!-- 
+        求10和15的最小公倍数a
+        分析：
+        10和15的公倍数有（30，60, 90……）
+        1.a一定大于等于两数之中较大数
+        2.a%10=0 && a%15=0
+        3.a一定小于等于两数乘积
+        故循环开始是15，结束是150，步长是1（步长为1时，中间较多数字都不能是两数的最小公倍数，因此可以修改步长为两数之中较大的数字）        
+    -->
+    <script>
+        var max = 15
+        var min = 10
+        for (a = max; a <= max * min; a += max) {
+            // console.log(a) 得到>=max且<=max*min的所有公倍数
+            if (a % 10 === 0) {  //因为前面取的a开始和步长都是15，所以上一步得到的a一定是15的倍数，这里只需要判断a是不是10的倍数就可以了
+                console.log(a)
+                // 因为要取最小公倍数，所以也满足除以10余数为零的第一个数字就是最小公倍数，只输出这第一个数字即可，此处用break结束if循环
+                break
+                // break应该在if循环语句的大括号中书写，是满足条件时要执行的代码的一部分
+            } 
+        }
+    </script>
+</body>
+</html>

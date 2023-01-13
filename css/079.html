@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位 脱离文档流 偏移位置是相对于当前浏览器窗口的</title>
+    <style>
+        .box{
+            width:100%;
+            height:5000px;
+            background-color: yellow;
+            /* position:absolute; */
+        }
+        .ad{
+            width:100px;
+            height:200px;
+            background-color: red;
+            position:fixed;
+            right:0;
+            bottom:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="ad"></div>
+    
+</body>
+</html>

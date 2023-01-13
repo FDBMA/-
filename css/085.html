@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位控制元素水平垂直居中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* margin: 0 auto; */
+            /* 先相对浏览器窗口上和左浏览器的一半，再相对自己向上向左自己的一半 */
+            position: absolute;
+            top: 50%;
+            left:50%;
+            margin-left: -100px;
+            margin-top: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

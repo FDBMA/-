@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>white-space 空余空间</title>
+
+    <style>
+        /* white-space  nowrap:不折行，最常用 */
+
+        div{
+            background: yellow;
+            width:200px;
+            height:200px;
+            white-space: pre-wrap;
+
+            /* normal（默认值，空白会被浏览器忽略）
+            nowrap（文本不会换行，文本会在同一行上继续，直到遇到br标签为止）
+            pre（预先格式化文本，会保留空格,tab，回车，但是不换行）
+            pre-wrap（显示空格回车也换行）
+            pre-line（显示回车换行，不显示空格）
+            inherite该属性用来设置如何处理元素内容的空白 */
+        }
+        #box{
+            background: yellow;
+            
+            height:200px;
+            float:right;
+
+            /* 实现文本溢出时显示省略号 */
+
+            white-space: pre; /* 强制文本不换行，也可以用nowrap属性值 */
+            overflow:hidden; /* 溢出内容隐藏 */
+            /* text-overflow:clip; 默认值，是裁切的意思，不显示省略号标记 */
+            text-overflow:ellipsis;
+            /* ellipsis 显示省略标记  使用该属性值时必须要有width属性 */
+            width:200px; /* 必须设置*/
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        Lorem      ipsum dolor sit amet consectetur, adipisicing elit. Aut, ad asperiores consequuntur labore suscipit officiis. Nulla sunt quam et rem id libero cumque similique magni eveniet culpa. Voluptate, consequuntur possimus?
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem ex cumque distinctio. Atque dolores ipsam saepe ut, minus nulla quos optio quae odio quibusdam commodi eligendi       voluptatibus labore molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit incidunt nisi magni excepturi, voluptatibus totam, officia labore impedit, repellat voluptatum qui voluptate est error veniam quo esse aliquid sit minima.
+        div{
+            background: yellow;
+            width:200px;
+            height:200px;
+            white-space: nowrap;
+        }
+    </div>
+    <!-- <pre>
+        预先格式化文本，会保留空格，tab，回车
+
+        在css和html中作用效果相同，在css中作为属性值出现，在html中作为双标签出现
+
+        div{
+            background: yellow;
+            width:200px;
+            height:200px;
+            white-space: nowrap;
+        }
+    </pre> -->
+</body>
+</html>

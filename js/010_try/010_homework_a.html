@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频里的答案</title>
+</head>
+<body>
+    <!-- 从10开始，到1结束，步长是1（从10到1计算用-1） -->
+    <script>
+        // 准备变量接受阶乘结果
+        var total = 1
+        // 开始：10
+        var n = 10
+        while (n >= 1) {
+            // console.log(n)  // 先使用这个步骤查看控制台内会输出的n 都是几
+            total *= n   // 把每一个数字乘到阶乘变量上 (total *= n 即 total = total * n)
+            n--   // 步长=1
+        }
+        console.log(total)  // 输出结果
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        img{
+            display:block;
+            /* 取消img和p之间的行间距 */
+        }
+        #box{
+            width:241px;
+            height:335px;
+            /* 检查里面显示的是宽*高 263px*364px */
+            /* background-color: yellow; */
+            margin:0 auto;/* 让该部分内容处于页面水平中间位置 */
+            padding:11px 11px 18px;
+            /* 内边距 上11 左右11 下18 */
+        }
+        .title{
+            width:235px;
+            height: 19px;
+            /* background-color: red; */
+            padding-left: 4px;
+            border-left:2px solid #254282;
+            color:#254282;
+            line-height:19px;/* 令line-height（文本的行高）和height的属性值相同 使得文本垂直方向文本居中 */
+            font-size: 14px;
+            font-weight: bold;/**文本加粗*/
+            margin-bottom: 12px;
+        }
+        .bigpic{
+            width:241px;
+            height:170px;
+            margin-bottom: 16px;
+            /* background-color: red; */
+        }
+        .bigpic img{
+            width:241px;
+            height:170px;
+        }
+        .bigpic p{
+            width:241px;
+            height:26px;
+            background-color: #f6f7f8;
+            font-size: 12px;
+            text-align:center;/*文本水平居中*/
+            line-height:26px;
+
+            /*
+            margin-bottom: 16px;
+            没有达到想要有的效果           
+
+
+            */
+
+        }
+        .smallpic{
+            width:241px;
+            height:120px;
+            /* background-color: yellow; */
+        }
+        .smallpic p{
+            font-size:12px;
+            width:112px;
+            /* 设置宽度和文本图片同宽使两个图片能够水平展示在同一行 */
+            background-color: #f6f7f8;
+            line-height: 18px;
+        }
+        .smallpic img{
+            width:112px;
+            height:84px;
+        }
+        .smallpic .left{
+            float:left;
+        }
+        .smallpic .right{
+            float:right;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <div class="title">图片</div>
+        <div class="bigpic"><img src="颜色表格-00.png"> <p>大姐利用异业联盟经营美容院</p></div>
+        <div class="smallpic">
+            <div class="left">
+                <img src="颜色表格-00.png">
+                <p>无效穿搭</p>
+            </div>
+            <div class="right">
+                <img src="颜色表格-00.png">
+                <p>小个子不要怕</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

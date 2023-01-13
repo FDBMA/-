@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id选择器前面加# */
+        #iddiv{
+            background-color:aliceblue!important;
+        }
+        /* ！important的权重更高一些 */
+        /* class选择器前面加. */
+        .cdiv{
+            background-color: green;
+        }
+        /* 这里是一个元素选择器 */
+       div{
+            background-color: yellow;
+        }
+        /* id>class>元素 */
+
+
+        /* 这是一个class选择器 */
+        div.pclass{
+            background-color: yellow;
+        }
+
+        /* 这是一个包含选择器 包含选择器权重为各元素的权重和，即权重比较大 */
+        div span p{
+            background-color: aqua;
+        }
+
+        div p{
+            background-color: red;
+        }
+        /* 包含选择器优先级＞class选择器 
+
+        并且包含选择器写的层数越多越优先展示
+        即 当div span p 和 div p 同时出现的时候，优先展示div span p的样式
+        */
+        /* 当 div.pclass 和 div p 同时出现的时候，
+         .pclass是类选择器  p是元素选择器，优先展示.pclass的样式*/
+        p{
+            background-color: black;
+        }
+        p{
+            background-color: floralwhite;
+        }
+        /* 相同权重选择符的优先级遵循就近原则：最后定义的选择符优先显示 */
+
+
+        /* 
+        不同选择符之间的样式有冲突的时候，高优先级覆盖低优先级
+        */
+    </style>
+
+</head>
+<body>
+    <div class="cdiv" id="iddiv" style="background-color:orange;">
+        111111111111111
+    <span><p class="pclass">12315</p></span>
+    </div>
+    <!-- 行内样式的优先级更高于包含选择符 
+    ！important>内联样式（行内样式）>包含选择符>id>class>元素选择器）
+    -->
+
+    <p>12456</p>
+</body>
+</html> 

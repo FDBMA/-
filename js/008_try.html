@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch语句 </title>
+</head>
+<body>
+    <!-- <script>
+        var foot = 40
+        // 开始一个switch语句
+        switch (foot) {
+            case 30 :
+            console.log('购买30码的鞋子')
+            break
+            case 40 :
+            console.log('购买40码的鞋子')
+            // break
+            case 37 :
+            console.log('购买37码的鞋子')
+        }
+    </script> -->
+<!-- 执行完代码要用break结束，否则持续进行后续的语句（即穿透效果，该效果会从第一个满足条件的选项开始向下穿透） -->
+
+    <script>
+        var foot = 42
+        switch ( foot ) {
+            case 37 :
+                console.log('买一双37号的鞋')
+                break
+            case 40 :
+                console.log('买一双40号的鞋')
+                break
+                default:
+                console.log('买一双42号的鞋')
+        }
+    </script>
+<!-- 在所有条件不匹配的时候，展示default的结果 -->
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面打印九九乘法表</title>
+</head>
+
+<body>
+    <script>
+        for (var e = 1; e <= 9; e++) {
+            for (var f = 1; f <= e; f++) {
+                var z = e * f
+                document.write(f + "*" + e + "=" + z + " ") //当次循环中f会比e小，所以写成f*e=z的格式才和乘法表一样
+            }
+            document.write("<br>")
+        }
+
+        console.log(e)
+        console.log(f)
+        // 最终e和f的值都是10
+    </script>
+    <!-- 视频里的写法如下 -->
+    <!-- <script>
+        for (var e = 1; e <= 9; e++) {
+            for (var f = 1; f <= e; f++) {
+                document.write(f + "*" + e + "=" + e*f + " ") 
+            }
+            document.write("<br>")
+        }
+
+        console.log(e)
+        console.log(f)
+        // 最终e和f的值都是10
+    </script> -->
+</body>
+
+</html>

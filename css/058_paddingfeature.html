@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:400px;
+            background-color: yellowgreen;
+            /* 盒子的背景颜色会渲染到padding之中
+            padding: 10px; */
+
+            /* 分别单独设置上下左右的padding */
+            /* padding-top:20px; */
+            /* padding-bottom:15px; */
+            /* padding-left:18px; */
+            /* 只要该行出现，不论在(padding-right:13px;)前后，均以此行padding为0展示
+            padding-right:0 
+             */
+            padding-right:13px;
+            
+
+            /* padding不支持负值 */
+
+        }
+    </style>
+    <style>
+        /* 清除所有的内边距padding 
+        1.使用通配符，设置padding属性值为0
+        2.对padding-top padding-bottom padding-left padding-right分别设置属性值为0
+        */
+        /*  
+        *{
+            padding:0;
+        }  
+        在此处设置不能对div的padding产生影响，但是可以清掉ul的padding
+        */
+        *{
+            padding:0;
+        } 
+
+        p{
+            width:200px;
+            height:400px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id blanditiis non porro enim aliquid laboriosam natus voluptate debitis maiores et voluptas ut placeat eos accusamus, tempore consequatur sed fugit?</div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos error nulla quidem adipisci non, id distinctio cumque libero, corporis reprehenderit laudantium voluptates labore accusantium! Molestias temporibus similique odio quod!
+    </p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

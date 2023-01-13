@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角形案例</title>
+<style>
+   .box{
+    width:100px;
+    height:50px;
+    line-height: 50px;
+    text-indent:2em;
+    background-color: lightblue;
+    color:white;
+    }
+    span{
+        width:0;
+        height:0;
+        display:inline-block;
+        /* span标签是行内元素，要设置宽高需要先修改display属性为inline-block,改为行内块元素 */
+        border:5px solid transparent;
+        border-top:5px solid white;
+        position: relative;
+        /* relative就是相对定位，相对于自己原来的位置的定位 */
+        top:2.5px;
+    }
+
+    /* 上方实现了效果但是span标签是一个行内标签，不能设置宽高，要设置宽高需要先display:inline-block */
+
+
+    .box:hover span {
+        border:5px solid transparent;
+        border-bottom:5px solid white;
+        position:relative;
+        top:-2.5px;
+    } 
+</style>
+</head>
+<body>
+    <div class="box">
+        导航
+        <span class="icon"></span>
+    </div>
+</body>
+</html>

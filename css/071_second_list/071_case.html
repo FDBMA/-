@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级菜单</title>
+
+    <style>
+        /* 清除所有的边距 */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* 无序列表的项目符号是 list-style,带在ul上 取消无序列表的项目符号 */
+        ul{
+            list-style: none;
+        }
+        /* 当鼠标放在.a上时，.a下的li变成块元素 */
+        .a>li:hover ul{
+            display:block;
+        }
+        .a:hover{
+            font-weight: bolder;
+            background-color: burlywood;
+            border:1px solid burlywood;
+        }
+
+        .a{
+            width:300px;
+            margin:0 auto;
+        }
+        .a .box{
+            float:left;
+            width:148px;
+            text-align:center;
+            /* 增加了border的1px,需要修改width,把width调整为比原来小2px */
+            border: 1px solid blue;
+            background-color: blue;
+            color:white;
+        }
+
+        /* 只给.box下的ul下的li设置样式，不影响其他li的样式 */
+        .box>ul{
+            display:none;
+            background-color: aliceblue;
+            color:black;
+        }
+        .box>ul li:hover {
+            background-color: blueviolet;
+            color:aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="a">
+            <li class="box">品质课程
+                <ul>
+                    <li>html5</li>
+                    <li>python</li>
+                    <li>java</li>
+                    <li>云计算</li>
+                    <li>区块链</li>
+                </ul>
+            </li>
+
+            <li class="box">校企服务
+                <ul>
+                    <li>双选会</li>
+                    <li>上门招聘</li>
+                    <li>企业内训</li>
+                    <li>高校合作</li>
+                </ul>
+            </li>
+           
+        </ul>
+    </div>
+</body>
+</html>

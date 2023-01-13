@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #box{
+        width: 890px;
+        height: 290px;
+        /* background-color: yellow; */
+        margin:0 auto; /*水平居中*/
+        overflow: auto;
+        }
+        .info{
+            width:162px;
+            height:112px;
+            border:1px solid #808080;
+            float:left;
+            padding:0 48px 20px 0;
+        }
+        .info div{
+            /* width:162px; 不设置的时候跟随父盒子info的宽度 */
+            height:84px;
+            background: #cccccc;
+            font-size:12px;
+        }
+        .info .price{
+            height:63px;
+            line-height: 63px;/* line-height=height,垂直居中 */
+            padding-left:21px;
+            color:#b5b5b5;
+        }
+        .info .date{
+            padding-left:21px;
+            color:#b5b5b5;
+        }
+        .info .category{
+            height:28px;
+            line-height:28px;
+            background-color: white;
+            color:#000000;
+            text-align: center;/* 水平居中 */
+            font-size: 12px;
+        }
+
+        /* 对名为info的div的子盒子div做一个hover 鼠标路过子盒子div时背景颜色改变，字体颜色也改变 */
+        .info:hover div{
+            background-color: #219cea;
+        }
+        .info:hover .date{
+            color:white;
+        }
+        .info:hover .price{
+            color:white;
+        }
+        .info:hover .category{
+            color:#219cea;
+            background-image: url(颜色表格-00.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+        <div class="info"> <!-- info=information信息 -->
+            <div>
+                <p class="price">￥100.00圆</p>
+                <p class="date">有效期至:2021-5-1</p>
+            </div>
+            <p class="category">[店铺类][商城类]</p>
+        </div>
+    </div>
+</body>
+</html>

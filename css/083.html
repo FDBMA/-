@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位的层级</title>
+    <style>
+        div{
+            width:200px;
+            height: 200px;
+        }
+        .box1{
+            background-color:yellow;
+            position:relative;
+            top:100px;
+            left:100px;
+            z-index: -1;
+        }
+        .box2{
+            background-color: red;
+            position:relative;
+            z-index: -1;
+        }
+        /* 先对box1设置相对定位，使其位置与box2有重叠，此时box1会盖住box2的一部分；
+        在前面的基础上给box2设置相对定位（只设置position:relative;），box2会盖住box1（后来者居上看的是html中的顺序）   
+        再对box1设置z-index（使用前提：设置过position）属性,box2也可以设置这个属性，这个属性值取任意z整数数字，值越大层级越高可以取负值，同样满足值越大越靠上显示
+        z-index设置了相同值则遵循position的后来者居上原则   */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

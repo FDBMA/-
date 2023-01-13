@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d0{
+            width:3000px;
+            height:1000px;
+            background-color:black;
+            background-image:url(./颜色表格.png);
+
+            /* ?设置了no-repeat,但是得到的样式还是repeat了 */
+            background-repeat:no-reapt;
+
+            background-position:center;
+            /* background-attachment:fixed; */
+        }
+        .d1{
+            width:8000px;
+            height:8000px;
+            background-color:yellow;
+            background-image:url(./颜色表格-00.png);
+            background-repeat:no-repeat;
+            background-position:center center;
+            background-attachment:fixed;
+        }
+        .d2{
+            width:8000px;
+            height:8000px;
+            /* background-color:green;
+            background-image:url(./颜色表格-00.png);
+            background-repeat:no-repeat;
+            background-position:center center;
+            background-attachment:fixed; */
+            background:green url(./颜色表格-00.png) no-repeat center center fixed;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="d0"></div> -->
+    <div class="d1"></div>
+    <div class="d2"></div>
+</body>
+</html>

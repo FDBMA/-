@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        /* 全体英文单词首字母大写 中文不受影响*/
+        .p1{
+            text-transform:capitalize;
+        }
+
+        /* 全体英文字母小写 */
+        .p2{
+            text-transform: lowercase;
+        }
+
+        /* 全体英文字母大写 */
+        .p3{
+            text-transform: uppercase;
+        }
+
+        /* 对英文字母的样式不设置 */
+        .p4{
+            text-transform: none;
+        }
+
+        /* 
+        font属性的简写 必须按照如下顺序 
+        font-style 是否倾斜（可省略）
+        font-weight 是否加粗（可省略）
+        font-size/line-height 字体大小/行高
+        font-family 字体样式
+        */
+        /* .p4{
+            font: italic 800 50px/100px "楷体";
+        } */
+        .p4{
+            font:50px/100px "楷体";
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestiae doloremque tempora nisi libero 中文
+        consequuntur ut explicabo ullam ad possimus, atque exercitationem facere laboriosam. Illo temporibus aut nostrum
+        officiis ipsum.
+
+    </p>
+
+    <p class="p2">
+        Lorem ipsum dolor sit amet aut nostrum officiis ipsum
+    </p>
+
+    <p class="p3">
+        Lorem ipsum dolor sit aut nostrum officiis ipsum.
+    </p>
+    <p class="p4">
+        Cnsoicn shduwoiq sdhauoia duaswobcsxvj 用楷体.
+    </p>
+    
+</body>
+
+</html>

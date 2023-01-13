@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用函数乘十的阶乘</title>
+</head>
+<body>
+    <script>
+        function fn(a) {
+            var total = 1
+            var n = a
+            while (n >= 1) {
+                total *= n
+                n--
+            }
+            // console.log(total)  部分结果打印在控制台部分结果打印在页面
+            return total
+        }
+        var r2 = fn(10) //将其结果赋值给r2
+        fn(9)
+        fn(8)
+        fn(7)
+        fn(6)
+        fn(5)
+        fn(4)
+        var r1 = fn(3) //将其结果赋值给r1
+        fn(2)
+        fn(1)
+
+        // console.log(r1,r2)
+
+        console.log(r2) //将10的阶乘打印在控制台
+        document.write(r1) //将3的阶乘打印在页面
+    </script>
+</body>
+</html>

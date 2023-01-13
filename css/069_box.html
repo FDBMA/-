@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+            padding:10px;
+            border: 1px solid red;
+            width:200px;
+            height:200px;
+            /* margin:10px; */
+        }
+        .box1{
+            background-color: yellow;
+            /* padding:10px;
+            左右上下都有，但是上下不生效 */
+            /* margin:10px;
+            只有左右有 上下不展示 */
+        }
+        img{
+            padding:10px;
+            margin:10px;
+            border:1px double pink;
+        }
+    </style>
+    
+</head>
+<body>
+    <span class="box1">我是span</span>
+    <!-- span是行内元素 不支持上下边距 -->
+    <span >111</span>
+    <div class="d1">111</div>
+
+    <img src="颜色表格-00.png" alt="">
+    <!-- 行内块元素 支持上下左右边距 -->
+    <div>111</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父子关系绝对定位的层级</title>
+<style>
+        .box{
+            width:200px;
+            height:200px;
+            background-color: yellow;
+            position: relative;
+        }
+        .child{
+            width: 100px;
+            height:100px;
+            background-color: red;
+            position: absolute;
+            top:10px;
+            left:10px;
+            z-index:-1;
+        }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+    <!-- 
+    父子关系的两个div都只设置了宽高颜色时，.child会被显示在上方 
+    设置了父相子绝，子盒子加上top和left之后，还是.child显示在上方
+    让父盒子展示在上方的办法：给.child加z-index的负数值(对.box设置z-index正值无效)
+    -->
+</body>
+</html>

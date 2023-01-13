@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box02 {
+        width:300px;
+        height:300px;
+        background-color: black;
+        background-image:url(https://tse2-mm.cn.bing.net/th/id/OIP-C.cZ_54Kczkj9z8GQjcmJO5gHaFj?pid=ImgDet&rs=1);
+        background-repeat: no-repeat;
+
+        /* background-size 
+        1.属性值可以取数字，按照先宽度后高度的顺序带单位书写
+        2.属性值可以取百分比，相对于盒子宽高而言
+        3.属性值取 cover 背景图片会被等比例放大，不会失真（即不会丢失掉一部分像素）但是由于等比例放大会导致一部分图片丢失
+        4.contain 扩展图片至适应整个盒子，不会丢失图片部分，可能会留白铺不满盒子(设置background-repeat: no-repeat时才有)  【没设置background-repeat: no-repeat时没有发现有留白】
+         */
+        background-size:cotain; 
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box02">hello,everyone</div>
+    
+</body>
+</html>

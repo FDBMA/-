@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出模型-overflow</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* overflow: visible; 默认状态，内容溢出 */
+            /* overflow: hidden;  隐藏溢出内容，内容只能展示一部分 */
+            /* overflow: scroll; 滚动条模式，x和y轴都有滚动条，哪个方向溢出哪个方向滚动条处于可用状态 */
+            /* overflow: auto; 只有有溢出的方向上有滚动条 */
+        }
+        .box{
+            width: 100px;
+            height: 200px;
+            background: yellow;
+            /* 设置y轴滚动条隐藏 x轴滚动条显示 */
+            overflow-y: hidden;
+            overflow-x: scroll;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci explicabo nesciunt voluptas rem, architecto eius dolor ducimus provident delectus qui laudantium voluptates eos? Recusandae quos consequuntur eveniet unde explicabo nostrum?
+    </div>
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci explicabo nesciunt voluptas rem, architecto eius dolor ducimus provident delectus qui laudantium voluptates eos? Recusandae quos consequuntur eveniet unde explicabo nostrum?
+    </div>
+</body>
+</html>

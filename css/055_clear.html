@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* clear 清除元素  属性的四个属性值：
+        none; right; left; none; */
+        /* 实现清浮动的四种方法
+        1.设置固定的高度边框属性；
+        2.给当前浮动的标签后再加一个元素，设置内联样式style="clear:  "
+        3.给父元素添加一个css样式：overflow:hidden;
+        4.clear属性应该加给被浮动影响到位置的元素 */
+        /* 方法1 .container{
+            height:200px;
+        } */
+
+        /* 方法3_1 .container{
+            overflow:hidden;
+        } */
+        /* 方法3_2 div{
+            overflow:hidden;
+        } */
+        .red,.green{
+            width:200px;
+            height:200px;
+            float:left;
+        }
+        .red{
+            background-color: red;
+            
+            
+        }
+        .green{
+            background-color: green;
+            
+        }
+        .blue{
+            background-color: blue;
+            width:300px;
+            height:300px;
+            /* 方法4_1  clear:left; */
+            /* 方法4_2  clear:both; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="green"></div>
+        
+    </div>
+    <!-- 方法2 可以写在这个位置以及.green之后一行 clear的属性值还可以取both <div style="clear:left;"></div> -->
+    <div class="blue"></div>
+    
+</body>
+</html>

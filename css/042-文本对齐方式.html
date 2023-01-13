@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+             /* text-align:left;  文字水平方向默认居左
+            justify是两端对齐，仅对多行文本生效
+            */
+            text-align: justify; 
+            background:green;
+            width:800px;
+        }
+        .box2{
+            
+            background:yellow;
+            text-align:center;
+        }
+
+        .box3{
+            background:green;
+            width:800px;
+            height:300px;
+            line-height:50px;
+        }
+        /* line-height和width, height的属性值必须加单位px，否则会不展示效果或者影响html部分内容的展示 
+        line-height指定的是多行文本中的每一行所占的行高*/
+
+        .box4{
+            background:yellow;
+            width:600px;
+            height:100px;
+            line-height:100px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <p class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore, laudantium facilis natus adipisci dolor cupiditate sunt fugit quaerat qui temporibus dicta hic nesciunt itaque assumenda debitis quibusdam repellat eos.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt neque unde blanditiis iste accusamus dolore inventore autem, quas non velit, ex veniam magnam magni. Quaerat veritatis corporis ea atque ad!
+    </p>
+
+    <p class="box2">
+        hello,word!
+    </p>
+
+    <div class="box3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, nobis voluptas, delectus consequuntur animi eaque a nisi nesciunt illo veniam ad voluptate quos odit! Magni eveniet delectus iusto ratione Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci obcaecati laborum sapiente amet quam nisi commodi, veritatis fuga iste necessitatibus cupiditate dolores minus labore repellat consectetur consequatur officia debitis animi.
+    </div>
+
+    <div class="box4">
+        There is a label named "p".
+    </div>
+    <!-- p标签间有行间距，div标签是独占一行但是不带有行间距 -->
+</body>
+</html>

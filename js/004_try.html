@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 准备一个变量，数值为字符串类型
+        var s1='100'
+        console.log(s1)
+        console.log(typeof s1)
+        // 使用Number（）转换一下  
+        var n1=Number(s1) //var n1=Number（s1）指使用number方法将s1变量保存的值转换为数值类型,并将结果赋值给n1变量
+        console.log(n1)
+        console.log(typeof n1)
+
+        // 准备一个变量，数值为字符串类型
+        var s11='abc'
+        console.log(s11)
+        console.log(typeof s11)
+        // 使用Number（）转换一下  
+        var n11=Number(s11) //var n11=Number（s11）指使用number方法将s1变量保存的值转换为数值类型,并将结果赋值给n1变量
+        console.log(n11)
+        console.log(typeof n11)        
+
+
+
+        // 准备一个变量，数值为字符串类型
+        var s2='abc'
+        console.log(s2)
+        console.log(typeof s2)
+        // 使用paresInt（）转换一下  
+        var n2 = parseInt(s2) //var n2=paresInt（s2）指使用paresInt方法将s2变量保存的值转换为数值类型,并将结果赋值给n1变量
+        console.log(n2)
+        console.log(typeof n2)
+        // 转换前结果是abc，不能转换为数字，转换的结果是NaN，转换结果的类型是数值类型
+
+        var s22='100abc1'
+        console.log(s22)
+        console.log(typeof s22)
+        var n22 = parseInt(s22)
+        console.log(n22)
+        console.log(typeof n22)
+        // 转换前是100abc,是一位数字一位数字按顺序进行转换的，转换到第四位是a，不能转换为数字则不转换，最后的转换结果是100，转换结果的类型是数值类型
+
+        var s23='100.25'
+        console.log(s23)
+        console.log(typeof s23)
+        var n23 = parseInt(s23)
+        console.log(n23)
+        console.log(typeof n23)
+
+
+
+        var s3='100.25'
+        console.log(s3)
+        console.log(typeof s3)
+        // 使用 parseInt方法转换数据
+        var n3 = parseInt(s3)
+        console.log(n3)
+        console.log(typeof n3)
+        // 使用 parseFloat方法转换数据
+        var n4 =parseFloat(s3)
+        console.log(n4)
+        console.log(typeof n4)
+    </script>
+
+    <script>
+        // 准备一个变量，赋值为布尔类型内容
+        var b1 = true
+        console.log(b1)
+        console.log(typeof b1)
+        // 使用String()方法进行转换
+        var s1 = String(b1)
+        console.log(s1)
+        console.log(typeof s1)
+
+
+
+        // 准备一个变量，赋值为布尔类型内容
+        var b2 = true
+        console.log(b2)
+        console.log(typeof b2)
+        // 使用toString()方法进行转换
+        var s2 = b2.toString()
+        console.log(s2)
+        console.log(typeof s2)
+    </script>
+    <script>
+        // 准备一个变量，赋值为字符串类型内容
+        var s4 = 'abc'
+        console.log(s4)
+        console.log(typeof s4)
+        // 使用Boolean()方法进行转换
+        var b3 = Boolean(s4)
+        console.log(b3)
+        console.log(typeof b3)
+
+
+        // 试一下会被转换成false的5个内容
+        console.log(Boolean(0))
+        console.log(Boolean(NaN))
+        console.log(Boolean(''))
+        console.log(Boolean(undefined))
+        console.log(Boolean(null))
+    </script>
+</body>
+</html>

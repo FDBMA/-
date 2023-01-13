@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> margin </title>
+    <!-- margin 存在 margin-top margin-bottom margin-left margin-right 几个属性
+    对margin 属性值设定可以制定1/2/3/4个值 -->
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* float:left; */
+            
+        }
+
+        .box1 {
+            border: 1px double yellow;
+            background-color: red;
+            margin:10px;
+            margin-bottom:0;
+        }
+
+        .box2 {
+            border: 1px green solid ;
+            background-color: blue;
+            /* margin:-80px; */
+            /* margin:0 auto; 
+该属性对.box2 使用能使得.box2水平居中，对h1仅有删掉h1上下外边距margin的效果            
+            */
+        }
+        h1{
+            margin:0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <h1>hello</h1>
+</body>
+
+</html>

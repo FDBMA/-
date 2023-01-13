@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    float是浮动属性 有三个属性值：
+    left;right;none（default）
+-->
+<style>
+    div{
+        width:100px;
+        height:100px;
+    }
+    .red{
+        background-color: red;
+        
+        float:left;
+    }
+    /* .red的浮动设置为none，.green和.blue的float设置为right时，.red会独占一行 */
+    .green{
+        background-color: green;
+        /* width:200px;
+        height:200px; */
+        float:right;
+        /* 在.red靠左浮动的情况下，green此时会贴着.red尽可能的靠左浮动，但是当浏览器界面被放大和缩小时，在浏览器中展示的效果会有所变化（放大到一行无法容纳下.red和.green时，.red和.green会分成两行展示） */
+    }
+    .blue{
+        background-color: blue;
+        width:300px;
+        height:300px;
+        
+    }
+</style>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue">hello word!</div>
+    <!-- .red和.blue的宽高相同且.red靠左浮动时，.blue的文字会被挤在下方展示，但是不会不展示 -->
+</body>
+</html>

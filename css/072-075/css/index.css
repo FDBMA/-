@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* 以下是header */
+ul{
+    list-style:none;
+}
+
+.con{
+    width:996px;
+    margin:0 auto;  /**居中**/
+}
+
+.header{
+    height:110px;
+    /* background-color:yellow; */
+}
+
+.logo{
+    width:265px;
+    height:110px;
+    background:url(../img/logo.png);
+    background-repeat: no-repeat;/**和案例的图片大小不一样单独加的**/
+    float:left;
+}
+
+.headerright{
+    float:right;
+}
+
+.headerright ul{
+    /*list-style: none;
+     在.headerright里写无效果，改到最前面了 */
+    height:44px;
+    margin-top:10px;
+    line-height:44px; /* 属性值同height使内容垂直居中 */
+}
+
+.headerright ul li{
+    float:left;
+}
+
+.headerright li a{
+    border-right:1px solid #b2c7ea;
+    padding:0 13px;/* 上下0，左右13px */
+    font-size:13px;
+    color:#ababab;
+}
+
+.headerright .last{
+    padding-right: 0;
+    border:0;
+    /* 取消最右边的边框和内边距 */
+}
+
+.headerright .active{
+    color:#eb6ca1;
+    /* 另一个单独的字体颜色 注意选择器的优先级确保优先级足够才能展示效果*/
+}
+
+.search{
+    float:right;
+    width:234px;/* 因为.left有padding 14，这里应该改成234+14=248px 一般保证这里不变，所以修改.left 的width*/
+    height: 28px;
+    border:1px solid #d1d1d1;
+}
+
+.search input{    
+    border:0;/* 清除搜索框的边框 */
+    outline:none;/* 清除搜索框被选中时的黑色框 */
+}
+
+.search input[placeholder]{
+    padding-left: 14px;
+}
+
+.search .left{
+    float:left;
+    width:196px;
+    height:28px; /* 高度同父盒子 */
+}
+
+.search .right{
+    float:right;
+    background-image: url(../img/search.png) left center;
+    height:28px;
+    width:24px;
+}
+/* 以上是header */
+
+/* 以下是nav */
+.nav{
+    height:53px;
+    line-height:53px;
+    border-top:1px solid #657588;
+    background:#0c345c;
+    color:white;
+}
+.nav li{
+    float:left;
+    font-size:16px;
+    margin-right:76px;
+}
+/* 以上是nav */
+
+/* 以下是banner */
+.banner{
+    height:380px;
+    /* height部分可以根据截取出来的图片修改 */
+    background:url(../img/banner.png) no-repeat center;
+    /* 上一行使 banner.png 不要重复且居中，避免有的图片较小但是电脑比较大图片平铺重复 */
+}
+/* 以上是banner */
+
+/* 以下是list */
+.list{
+    height:213px;
+    /* background: yellow; */
+    margin-top:51px;
+    margin-bottom:35px;
+}
+.item{
+    height:211px;
+    width:305px;
+    border:1px solid #cccccc;
+    float: left;
+    margin-right: 19px;
+}
+.item p{
+    height:47px;
+    line-height:47px;
+    padding-left:28px;
+    font-size:16px;
+    color:#000;
+}
+.item img{
+    display:block;
+    /* 上行作用：让<img>和<p></p>之间没有空隙 */
+    height:164px;
+    /* 上行作用：原案例没有，为了使<img>和<p></p>都能展示在div-item中 */
+}
+.lastitem{
+    margin-right:0;
+    /* 加不加在此处看不出变化，视频案例中如果不加第三个item会被挤到下一行 */
+}
+/* 以上是list */
+
+/* 以下是footer */
+.footer{
+    height:206px;
+    border-top:1px solid #cccccc;
+    background:url(../img/bg.png);
+}
+.footer ul{
+    height:84px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid #ecebeb;
+    line-height:28px;
+}
+.footer ul li{
+    width:210px;
+    padding-left:30px;
+    font-size:12px;
+    color:#336699;
+    float:left;
+}
+.footer p{
+    height:61px;
+    line-height:61px;
+    padding-left:30px;
+}
+.footer p span{
+    color:#0096da;
+}
+/* 以上是footer */

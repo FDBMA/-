@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位 脱离文档流 有父盒子时一般（父相子绝）</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            margin:0 auto;
+            position:relative;
+            /*position:absolute;
+            top:100px;
+            left:100px; */
+        }
+        .child{
+            width: 200px;
+            height:200px;
+            background-color: red;
+            /* 有父盒子，父盒子没有定位的时候，定位还是相对于整个屏幕的 */
+            /* ! 一般用这个：有父盒子，父盒子定位是relative的时候，定位是相对于父盒子的 */
+            /* 有父盒子，父盒子只设置absolute的时候，父盒子会脱离文档流控制，回到屏幕左上角 */
+            position:absolute;
+            left:100px;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

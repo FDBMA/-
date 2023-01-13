@@ -1,0 +1,4 @@
+/* 同属性color出现时，在属性值后添加 !important 将会优先展示，此时不遵循就近原则*/
+h2{
+    color:purple;
+}

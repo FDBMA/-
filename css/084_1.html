@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兄弟关系绝对定位的层级</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+        }
+        .box1{
+            background-color: yellow;
+            position:absolute;
+            top:100px;
+            left:100px;
+            z-index:1;
+        }
+        .box2{
+            background-color: red;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- 两个兄弟关系的盒子都设置了绝对定位，html中谁在后谁就在上面显示 -->
+</body>
+</html>

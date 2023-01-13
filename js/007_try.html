@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平年还是闰年 年份/4无余数且不是100的倍数是普通闰年，年份/4无余数且是100的倍数是世纪闰年</title>
+</head>
+<body>
+    <script>
+        // 定义一个变量表示年份信息
+        var year = 2022
+        // 书写if语句进行判断
+        if (year % 4 === 0 && year % 100 !== 0 || year % 100 === 0) {
+            console.log (year + '是闰年')
+        } else {
+            console.log (year + '不是闰年')
+        }
+
+    </script>
+</body>
+</html>

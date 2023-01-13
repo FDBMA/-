@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            background: blue;
+        }
+        .b{
+            color:red;
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>111111</div>
+    <!-- 当两个属性值中含有同一个属性（如：background）时，
+        遵循就近原则:在style标签中谁在后就遵循谁的属性值 -->
+    <div class="b a">111112</div>
+    <div class="a">111113</div>
+    <div class="a">111114</div>
+    <div>111115</div>
+    <div>111116</div>
+</body>
+</html>

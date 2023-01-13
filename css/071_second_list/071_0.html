@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跟着视频课敲二级菜单</title>
+
+    <style>
+        /* 清除所有边距 只设置这一项的时候，ul的项目符号也会消失*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width: 300px;
+            /* 让.box的ul中li居于屏幕中央 */
+            margin:0 auto;
+        }
+        /* 取消所有ul的项目符号 */
+        ul{
+            list-style:none;
+        }
+
+        /* 让.item处于一行 */
+        .box .item{
+            float:left;
+            width:148px;
+            /* 让item中所有的li(包括li>ul>li)的文本都居中 */
+            text-align:center;
+            /* 给.item加蓝色底色和边框，这个border会导致.item的width之和变成304，超出.box，需要改变此处width为148px 或者修改.box处的width为304px保证.item的.item>li并列展示(一般要保证大盒子也就是此处的.box的宽度固定。) */
+            border:1px solid blue;
+            background-color: blue ;
+            /* 设置行高(li部分的行高)和字体颜色 */
+            color:white;
+            line-height:40px;
+        }
+        .item:hover{
+            background-color: lightblue;
+        }
+        .item ul{
+            display:none;
+            background-color: aliceblue;
+            color:black;
+        }
+        /* 用伪类选择器，当鼠标放在.item上时，ul以块元素的形式展示 */
+        .item:hover ul{
+            display:block;
+        }
+        /* 当鼠标放在.item li上时 li的样式 */
+        .item li:hover {
+            color:blue;
+        }
+/* .box .item 和 .box.item 的区别 */
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="box">
+            <li class="item">品质课程
+                <ul>
+                    <li>html5</li>
+                    <li>python</li>
+                    <li>java</li>
+                    <li>云计算</li>
+                    <li>区块链</li>
+                </ul>
+            </li>
+
+            <li class="item">校企服务
+                <ul>
+                    <li>双选会</li>
+                    <li>上门招聘</li>
+                    <li>企业内训</li>
+                    <li>高校合作</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

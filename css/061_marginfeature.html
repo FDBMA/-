@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d1,.d2,.d3,.d4{
+            width:200px;
+            height:200px;
+        }
+        .d1{
+            background: yellow;
+            margin-bottom: 100px;
+            
+        }
+        .d2{
+            background: red;
+            margin-top: 50px;
+        }
+        /* 上下的兄弟关系盒子margin边距会显示最大值，d1 d2之间的距离展示了100px */
+        .d3,.d4{
+            float:left;
+        }
+        .d3{
+            background: yellow;
+            margin-right: 100px;
+        }
+        .d4{
+            background: red;
+            margin-left: 100px;
+        }
+        /* 左右的兄弟关系盒子margin边距会合并展示，d3 d4展示为d3 d4间有100px距离 */
+
+        /* div{
+            overflow:hidden;
+            修正方法1'
+        } */
+        .f{
+            width:498px;
+            height:498px;
+            background-color: black;
+            /* overflow:hidden; 
+           .f(500px*500px)和.f1(200px*200px)是父子关系，给f1加外边距margin，要实现.f1 上边框距离f的上边距100px的效果， 
+           但是给.f1加了margin之后margin作用于f上
+
+           修正方法1 
+           该属性也可加给父元素的标签（作为标签属性出现时也能生效）
+            */
+            /* padding-top:100px;
+            修正方法2
+            同时改变f的height为400px 保证 .f(500px*500px),并删除.f1的margin-top:100px;实现效果 
+            */
+            /* border:1px solid transparent;
+            其中transparent 指border的边框透明
+            修正方法3
+            需要同时修改.f的width:498px;height:498px; 保证 .f(500px*500px) 
+            */
+        }
+        .f1{
+            width:200px;
+            height:200px;
+            background-color: blue;
+            margin-top:100px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div> -->
+
+    <div class="f">
+        <div class="f1"></div>
+    </div>
+</body>
+</html>

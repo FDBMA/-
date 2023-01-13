@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+
+    <style>
+        a:link{
+            background-color: black;
+            color: white;
+        }
+        a:visited{
+            background-color: black;
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+        }
+        a:active{
+            background-color:red;
+        }  
+        a.b{
+            background: red;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        a{
+            padding:10px;
+            display:inline-block;
+            /*display:inline-block; 确保a与div之间不会有重叠部分  */
+        }
+        .box{
+            width:40px;
+        }
+        .hidden{
+            display:none;
+        }
+        .box:hover ul{
+            /* background-color: yellow; */
+            /* 当鼠标放在.box文字上，.box会有黄色底色 */
+            display:block;
+        }
+    </style>
+
+</head>
+<body>
+    <center><a href="" class="b">首页</a>
+        <a href="">国内</a>        
+        <a href="">国际</a>
+        <a href="">军事</a>
+        <a href="">财经</a></center>
+
+        <div class="box">目录
+            <ul class="hidden">
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </div>
+</body>
+</html>

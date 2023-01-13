@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一年中的第几天 这个案例视频中case 12~case 2 结尾有分号,不知道是不是格式要求,但是这个没有影响最终答案的输出</title>
+</head>
+<body>
+    <script>
+        // 准备三个变量，分别表示年月日
+        var year = 2008
+        var month = 8
+        var date = 8
+
+        // 再准备一个变量接受统计结果
+        var total = 0
+
+        //使用switch叠加月份信息
+        switch (month) {
+            case 12 : total += 30   //表示当 month=12的时候，total叠加11月的整月天数
+            case 11 : total += 31
+            case 10 : total += 30
+            case 9 : total += 31
+            case 8 : total += 31
+            case 7 : total += 30
+            case 6 : total += 31
+            case 5 : total += 30
+            case 4 : total += 31
+            case 3 : 
+            if (year % 4===0) {
+            total += 29
+            } else {
+            total += 28
+            } 
+            // case 3 : totle += 28   //2月份的天数先按照平年算，后面判断是平年还是闰年，如果是闰年再加上一天即可
+            case 2 : total += 31
+        } 
+        
+        // 用if语句判断是平年还是闰年 替换原来的case 3 :后的执行语句 
+        /* 
+        if (year % 4===0) {
+            total += 29
+        } else {
+            total += 28
+        } 
+        */
+
+        // 再直接叠加当月天数
+        total += date
+        console.log(total)
+
+    </script>
+</body>
+</html>

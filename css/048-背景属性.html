@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        透明度a(alpha)的取值为0.~1.0 也可以取百分比
+        msd中描述rgb三个属性值之间需要用逗号隔开，a的属性值与前面几个属性值可以用逗号隔开也可以用空格隔开，试了一下空格，当前样式不会展示
+        */
+        .box1 {
+            font-size:80px;
+            width:600px;
+            height:auto;
+            /* background-color: rgb(255, 0, 0); */
+            background-color:rgba(255,0,0,20%);
+        }
+        .box2 {
+            font-size:80px;
+            width:600px;
+            height:auto;
+            /* background-color: rgb(255, 0, 0); */
+            background-color:rgba(255,0,0,0.5);
+        }
+        .box3 {
+            font-size:80px;
+            width:600px;
+            height:200px;
+            /* background-color: rgb(255, 0, 0); */
+            background-color:rgba(255,0,0,1);
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color: rgba(0,0,0,80%);
+        }
+        .box4{
+            width:100px;
+            height:100px;
+            /* background-color: rgba(0,0,0); */
+            background-color: #000000;
+        }
+    </style>
+    <!-- 背景颜色属性值可以用1.颜色英文单词 2.rgb 3.rgba 4.16进制（0-9+a-f  每两位代表一个颜色，分别对应rgb #000000 = #000 = rgb(0,0,0)） -->
+    <style>
+    .box00 {
+        font-size:80px;
+        width:600px;
+        height:500px;
+       
+        background-image:url(./颜色表格-00.png);
+        /* 图片小于盒子大小 会平铺 调整如下 background-repeat:repeat-x 只沿着x轴平铺 background-repeat:repeat-y 只沿着y轴平铺 xy不区分大小写？*/
+        background-repeat:no-repeat; 
+        /* 不平铺且水平居中垂直居上 先后两个属性值用空格(可以用英文逗号)分开，先后顺序不影响展示结果 */
+        /* background-position:top,center ;  */
+        /* 前一个百分比指的是距离左边的距离，后一个是指距离上边框的距离 可以用英文逗号隔开，样式结果不一定准确*/
+        background-position:20%,10%; 
+    }
+    .box01 {
+        font-size:80px;
+        width:600px;
+        height:auto;
+      
+        background-image:url(颜色表格.png);
+        background-position:center,center;
+        
+    }
+    div{
+        background-color: #000000!important;
+    }
+    /* 同时设置background-color 和background-image时，优先展示image的样式，不论对这两个属性的命名先后 */
+    .box02 {
+        font-size:80px;
+        width:600px;
+        height:200px;
+       
+        
+        background-image:url(颜色表格-00.png) ;
+        /* background-repeat:repeat-y; */
+        background-color: yellow ;
+    }
+</style>
+</head>
+
+<body>
+    <div class="box1">hello,everyone</div>
+    <div class="box2">hello,everyone</div>
+    <div class="box3">hello,everyone<div class="box"></div></div>
+    <div class="box4"></div>
+    <!-- 展示背景颜色属性 -->
+    <br>
+    <div class="box00">hello,everyone</div>
+    <div class="box01">hello,everyone</div>
+    <div class="box02">hello,everyone</div>
+    <!-- 展示背景图片属性 -->
+</body>
+
+</html>

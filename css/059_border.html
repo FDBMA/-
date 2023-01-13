@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d{
+            width:300px;
+            height:400px;
+            background-color:blueviolet;
+
+            /* 常用属性值设置：
+            border:1px solid gray;
+            */
+
+            /* border是复合属性 上述常用属性值分开有三个属性border-width  */
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: gray; */
+
+            /* 上述三个属性均可以设置四个属性值 但是设置四个属性值的时候必须把三个属性都写出来（写几个属性值都可以）
+            单独只有border-width或border-color时无效果
+            只有border-style单独设置时可以展示，有默认color:black 以及默认width:2.400px */
+            /* 只有width+color时不显示效果 */
+            border-width: 2.4px; /*10px 20px 13px 15px; */
+            border-color: yellow red blue green;
+            border-style:solid  double dashed dotted; 
+        }
+        .d1{
+            /*border-width:10px 20px;  指上下宽度为10px 左右宽度为20px */
+            /* border-width:10px 20px 30px; 指上10 左右20 下30 */
+            /* border-color: yellow red blue green; */
+            border-style:solid  double dashed dotted;
+
+            /* 只写border-color: yellow red blue green;
+            border-style:solid  double dashed dotted; 时也能展示效果，会有默认的border */
+            /* 只写border-style:solid  double dashed dotted; 时展示效果，有默认的border和color黑色 */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="d">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum porro rerum nulla quos unde doloribus alias nostrum! Nesciunt ratione non saepe eius corrupti doloribus rem possimus. Dolorum, odit illo?
+    </div>
+    <div class="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum porro rerum nulla quos unde doloribus alias nostrum! Nesciunt ratione non saepe eius corrupti doloribus rem possimus. Dolorum, odit illo?
+    </div>
+</body>
+</html>

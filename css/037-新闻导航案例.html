@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        a:link{
+            background-color: black;
+            color: white;
+        }
+        a:visited{
+            background-color: black;
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+        }
+        a:active{
+            background-color:red;
+        }  
+        /* 学了选择器的权重，id选择器的权重比较大 */
+        a.b{
+            background: red;
+        }
+        /* 另一个简便方式实现和上方相同的样式 */
+        /* a{
+            background-color: black;
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+        } */
+        a{
+            text-decoration:none;
+            /* 去掉超链接下的下划线 */
+        }
+    </style>
+</head>
+<body>
+    <center><a href="" class="b">首页</a>
+        <a href="">国内</a>
+        <a href="">国际</a>
+        <a href="">军事</a>
+        <a href="">财经</a></center>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 条件分支语句</title>
+</head>
+<body>
+    <script>
+        var money = 800
+        // 满足条件就执行，不满足就不执行
+        if ( money >= 5000 ) {
+            console.log('吃米其林三星')
+        } else {
+            console.log('只能选择回家，听我妈问我为什么还不找女朋友')
+        }
+    </script>
+    <script>
+        var money = 0
+        // 满足哪一个if条件就执行哪一个
+        // 前面的如果满足了，就不考虑后面的了
+         if ( money >= 5000 ) {
+            console.log('吃米其林三星')
+        } else if ( money >= 500 ) {
+            console.log('我可以选择吃快餐')
+        }
+    </script>
+    <script>
+        var money = 0
+        // 满足哪一个if条件就执行哪一个
+        // 前面的如果满足了，就不考虑后面的了
+        // 当所有条件都不满足的时候，就会执行else后的内容
+         if ( money >= 5000 ) {
+            console.log('吃米其林三星')
+        } else if ( money >= 500 ) {
+            console.log('我可以选择吃快餐')
+        } else{
+            console.log('只能选择回家，听我妈问我为什么还不找女朋友')
+        }
+    </script>
+</body>
+</html>

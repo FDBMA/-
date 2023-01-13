@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻找最大公约数 公约数：能同时被两个数字整除</title>
+</head>
+
+<body>
+    <!-- 
+        寻找12和24的最大公约数 
+        分析：12和24的公约数有（1,2,3,4,6,12）
+        1.这些公约数一定小于等于两个数中较小的数字
+        2.公约数一定大于等于1
+        3.能同时被两个数字整除
+        故循环的开始是1，结束是12，步长为1（找到的第一个数字是1，最后一个数字是12是最大公约数）
+        将循环的开始确定为12，结束是1，步长为1（找到的第一个数字就是12，是最大公约数）
+    -->
+
+    <script>
+        var max = 24
+        var min = 12
+        for (var a = min; a >= 1; a--) {
+            // console.log(a) //输出a的值
+            if (max % a === 0 && min % a === 0) {
+                // 找到12和24的所有公约数，并输出
+                console.log(a)
+                // 输出的第一个公约数就是要找的最大公约数，所以无需循环，此处就可以结束循环了
+                break 
+                // 最终输出了12和24的最大公约数12
+            }
+        }
+    </script>
+</body>
+
+</html>

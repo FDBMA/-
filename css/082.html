@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角形 用rgb(0,0,0,0) 前三个随意,最后一个为0保持颜色透明;也可以使用transparent设置透明色</title>
+    <style>
+        div{
+            width:0px;
+            height:0px;
+            border-top:20px solid white;
+            border-left:20px solid rgb(0,0,0,0);
+            border-right:20px solid rgb(0,0,0,0);
+            border-bottom:20px solid transparent;
+        }
+        body{
+            background-color: lightblue;
+        }
+        .box{
+            width:0px;
+            height:0px;
+            border-bottom:20px solid white;
+            border-left:20px solid rgb(0,0,0,0);
+            border-right:20px solid rgb(0,0,0,0);
+            border-top:20px solid transparent;
+        }
+        /* 另一种简单写法 */
+        .box1{
+            width:0px;
+            height:0px;
+            border:20px solid transparent;
+            border-right:20px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

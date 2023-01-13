@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位 不脱离文档流</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+
+            /* 默认值 static不支持top等值的设置 */
+            /* position:static; */
+            /* top:100px; */
+
+            /* 相对定位 relative
+            top,left表示相对于自己原来位置的顶部和左边偏移距离（想对自己原来位置向下向右偏移100px;）  */
+            /* position:relative;
+            top:100px;
+            left:100px;
+            */
+
+            /* 相对定位 relative
+            top,left取负值时 */
+            position:relative;
+            top:-100px;
+            left:-100px;
+
+            /* 设置position:relative;
+            top:100px;
+            bottom:-100px;
+            无意义，不显示结果 */
+        } 
+        .box3{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

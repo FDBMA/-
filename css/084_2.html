@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位能把一个行内元素转换成块元素</title>
+    <style>
+        span{
+            width:100px;
+            height:100px;
+            background-color: yellow;
+            /* position:absolute; */
+            float:right;
+        }
+        /* 让行内元素变成块元素的方法：
+            1.display：block；
+            2.position:absolute;
+            3.float:left;
+        */
+    </style>
+</head>
+<body>
+    <span>hello</span>
+    <!-- span是一个行内元素，默认display:inline;对其设置宽高不显示 -->
+</body>
+</html>

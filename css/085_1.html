@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父子关系下水平垂直居中</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box1 {
+        width: 500px;
+        height: 500px;
+        background-color: yellow;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* 只有用margin-top（或者left）设置负数有效，
+        bottom和right设置正值没有效果（属性值也不能设置成百分比，设置成百分比的时候是参照父盒子进行设置的） */
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+</style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环案例1-页面打印9行9列星号</title>
+</head>
+
+<body>
+    <script>
+        // 在页面输出一个“*”
+        // document.write("*")
+
+
+        //<!-- 输出一行九个“*”,开始:1;结束:<=9;步长:1 -->
+        // 方法一： while循环语句
+        // var n = 1
+        // while (n <= 9) {
+        //     console.log(n)
+        //     n++
+        //     document.write("*     ")
+        // }
+        // 方法二： for循环语句
+        // for (var n = 1;n <= 9;n++){
+        //     document.write("*")
+        // }
+
+
+        for (var m = 1;m <= 9;m++) {
+        for (var n = 1;n <= 9;n++) {
+            document.write("* ")
+        }
+        document.write("<br>")  //输出一个换行标签
+        }
+        console.log(m)
+        console.log(n)
+    </script>
+</body>
+
+</html>
