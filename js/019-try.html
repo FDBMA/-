@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象数据类型</title>
+</head>
+
+<body>
+    <script>
+        // 创建一个对象
+        var obj = {
+            a: 100,
+            b: true,
+            c: 'hello word'
+        }
+        // 输出
+        console.log(obj)
+    </script>
+
+    <script>
+        // 准备一个对象
+        var a = {}
+        // 输出
+        console.log(a)
+        // 增加键值对
+        // 方法一
+        a.name = '小佳'
+        // 方法二
+        a['age'] = 18
+        // 再输出
+        console.log(a)
+
+        // 删除键值对
+        // 方法一
+        delete a.name
+        // 方法二
+        delete a['age']
+        // 删除完进行输出
+        console.log(a)
+    </script>
+    <script>
+        // 准备一个对象
+        var b = {
+            name: '小佳',
+            age: 18
+        }
+        // 输出
+        console.log(b)
+        // 修改键值对
+        // 方法一
+        b.name = '佳佳'
+        // 方法二
+        b['age'] = 24
+        // 再输出
+        console.log(b)
+    </script>
+    <script>
+        // 准备一个空对象
+        var c = {}
+        // 增加一些键
+        c.name = '小佳'
+        c.age = 18
+        // 查对象的值
+        // 方法一
+        console.log(c.name)
+        // 方法二
+        console.log(c['age'])
+    </script>
+</body>
+
+</html>
